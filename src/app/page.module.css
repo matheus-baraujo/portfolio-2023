@@ -1,14 +1,2 @@
-.main{
-  max-width: 1280px;
-  margin: 0px auto;
-}
 
-.info{
-  position: relative;
-  
-  margin-left: 50%;
-  min-height: 100vh;
-  padding: 5%;
 
-  overflow: hidden;
-}

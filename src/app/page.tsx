@@ -5,16 +5,15 @@ import Intro from './_components/intro'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { Col } from 'react-bootstrap';
+import Info from './_components/info';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Container>
-        <Row>
+        <Row className='px-5'>
           <Intro />
-          <Col>
-            <div className={styles.info}>Teste 2</div>
-          </Col>
+          <Info />
         </Row>
       </Container>
     </main>
