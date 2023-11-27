@@ -4,7 +4,6 @@ import Intro from './_components/intro'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import { Col } from 'react-bootstrap';
 import Info from './_components/info';
 
 export default function Home() {
