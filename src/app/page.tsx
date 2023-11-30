@@ -9,8 +9,8 @@ import Info from './_components/info';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Container>
-        <Row className='px-5'>
+      <Container fluid="sm">
+        <Row className='px-3 px-md-5'>
           <Intro />
           <Info />
         </Row>

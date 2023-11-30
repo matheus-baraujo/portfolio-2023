@@ -3,13 +3,13 @@
   height: 100vh;
   padding: 100px 0%;
 
-  display: flex;
+  display: grid;
   align-content: space-between;
-  flex-wrap: wrap;
+  
 }
 
 .titles{
-  width: 60%;
+  width: 70%;
 }
 
 
@@ -20,4 +20,14 @@
 .titles p{
   padding-right: 10%;
   color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .intro{
+    position: relative;
+  }
+
+  .titles{
+    width: 90%;
+  }
 }

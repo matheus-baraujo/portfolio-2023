@@ -17,10 +17,10 @@ let data: User = Data;
 
 function Intro() {
   return (
-    <Col>
+    <Col sm={12} md={6}>
       <div className={styles.intro}>
 
-        <div style={{width: "100%"}}>
+        <div>
 
           <div className={styles.titles}>
             <Stack direction="vertical" gap={3}>
