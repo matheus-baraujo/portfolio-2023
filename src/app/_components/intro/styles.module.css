@@ -9,9 +9,13 @@
 }
 
 .titles{
-  width: 70%;
+  width: 80%;
 }
 
+
+.titles h1{
+  font-size: 3rem;
+}
 
 .titles h2{
   font-size: 1.5rem;

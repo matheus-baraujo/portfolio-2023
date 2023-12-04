@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 
 import About from './About';
 import Skills from './Skills';
+import Projects from './Projects';
 
 const Info = () => {
   return (
@@ -12,6 +13,7 @@ const Info = () => {
         
         <About></About>
         <Skills></Skills>
+        <Projects></Projects>
       </div>
     </Col>
   )
