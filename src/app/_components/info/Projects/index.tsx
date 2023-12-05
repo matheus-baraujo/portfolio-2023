@@ -1,40 +1,53 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import styles from "./styles.module.css";
+import CardPortfolio from "./CardProtfolio";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 
-interface Project{
-	id: number;
-	name: string;
-	language: string;
-	url: string;
-	description: string;
+interface Project {
+  id: number;
+  name: string;
+  language: string;
+  html_url: string;
+  description: string;
 }
 
 const Projects = () => {
+  const [data, setData] = useState<Project[]>([]);
 
-	const [data, setData] = useState<Project[]>([]);
+  async function getData() {
+    const res = await fetch(
+      "https://api.github.com/users/matheus-baraujo/repos?sort=updated&direction=desc"
+    );
 
-	async function getData() {
-		const res = await fetch("https://api.github.com/users/matheus-baraujo/repos");
-	
-		const data = await res.json();
-	
-		setData(data);
-	}
+    const data = await res.json();
 
-	getData();
+    setData(data);
+  }
 
-	const teste = data.slice(0, 4);
+  getData();
+
+  const teste = data.slice(0, 4);
 
   return (
-    <div className={+" " + "mb-5"}>
+    <div className={styles.projects +" " + "mb-5"}>
       <h5 className={"mb-3"}>Projects</h5>
 
       <ul>
-				{
-					teste.map((item) => {return <li key={item.id}> {item.name + ' ' + item.language + ' ' + item.url + ' ' + item.description + ' '}  </li>})
-				}
-			</ul>
+        {teste.map((item) => {
+          return (
+            <li key={item.id}>
+			        <CardPortfolio name={item.name} language={item.language} url={item.html_url} description={item.description}></CardPortfolio>
+            </li>
+          );
+        })}
+
+        <li style={{textAlign: "end"}}>
+          <Link href={"https://github.com/matheus-baraujo"} className={styles.linkGit}>View all projects <FontAwesomeIcon icon={faArrowRight}/></Link>
+        </li>
+      </ul>
     </div>
   );
 };
