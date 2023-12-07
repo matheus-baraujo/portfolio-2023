@@ -1,0 +1,10 @@
+.skillCard{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+}
+
+.skillCard .skillIcon{
+    font-size: 4.5rem;
+}

@@ -18,7 +18,7 @@ const CardPortfolio = ({name, language, url, description}: Project) => {
 
 
   if (language == null) {
-    language = "Mixed fonts / Not able to acertain.";
+    language = "Mixed languages / Not able to acertain.";
   }
 
   if (description == null) {

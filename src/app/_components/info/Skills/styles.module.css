@@ -3,10 +3,10 @@
 }
 
 .skills ul{
-    padding: 0%;
+    padding: 0% 15px;
     display: flex; 
     flex-direction: row; 
-    gap: 15px; 
+    /* gap: 15px;  */
     flex-Wrap: wrap;
 }
 
