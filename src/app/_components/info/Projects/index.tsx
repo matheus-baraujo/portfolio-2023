@@ -10,8 +10,9 @@ interface Project {
   id: number;
   name: string;
   language: string;
-  html_url: string;
+  url: string;
   description: string;
+  topics: string[];
 }
 
 const Projects = () => {
@@ -39,7 +40,7 @@ const Projects = () => {
         {teste.map((item) => {
           return (
             <li key={item.id}>
-			        <CardPortfolio name={item.name} language={item.language} url={item.html_url} description={item.description}></CardPortfolio>
+			        <CardPortfolio {...item}></CardPortfolio>
             </li>
           );
         })}

@@ -1,8 +1,11 @@
 .skillCard{
-    width: 200px;
+    width: 45%;
     height: 200px;
+    margin: auto;
     text-align: center;
-    align-items: center;
+    padding: 10%;
+
+    background-color: rgb(49, 185, 185);
 }
 
 .skillCard .skillIcon{
