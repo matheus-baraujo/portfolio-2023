@@ -19,7 +19,7 @@ const Skills = () => {
   var teste = faJs;
 
   return (
-    <div className={styles.skills + ' ' + "mb-5"}>
+    <div className={styles.skills} id='skills'>
 
         <h5 className={'mb-3'}>Skills</h5>
         

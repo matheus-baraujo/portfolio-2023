@@ -10,7 +10,7 @@ interface Project {
   id: number;
   name: string;
   language: string;
-  url: string;
+  html_url: string;
   description: string;
   topics: string[];
 }
@@ -33,7 +33,7 @@ const Projects = () => {
   const teste = data.slice(0, 4);
 
   return (
-    <div className={styles.projects +" " + "mb-5"}>
+    <div className={styles.projects} id="projects">
       <h5 className={"mb-3"}>Projects</h5>
 
       <ul>

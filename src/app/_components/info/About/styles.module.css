@@ -1,4 +1,15 @@
+.about{
+    padding-top: 100px;
+}
+
 .about p{
     color: gray;
     padding: 0px 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .about{
+        padding-top: 50px;
+    }
 }

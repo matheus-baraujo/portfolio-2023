@@ -7,7 +7,7 @@ import Topics from "./Topics";
 interface Project {
   name: string;
   language: string;
-  url: string;
+  html_url: string;
   description: string;
   topics: string[];
 }
@@ -15,7 +15,7 @@ interface Project {
 const CardPortfolio = ({
   name,
   language,
-  url,
+  html_url,
   description,
   topics,
 }: Project) => {
@@ -36,13 +36,13 @@ const CardPortfolio = ({
 
   return (
     <div className="mb-3">
-      <Link href={url} className={styles.repoLink}>
+      <Link href={html_url} className={styles.repoLink}>
         <Card className={styles.card}>
           <Card.Body>
             <Card.Title className={styles.title}>{name}</Card.Title>
             <Card.Text className={styles.text}>{description}</Card.Text>
 
-            <Stack direction="horizontal" gap={2}>
+            <Stack direction="horizontal" gap={2} style={{flexWrap: "wrap"}}>
               {topics.map((tag, index) => {
                 return <Topics key={index} tag={tag}></Topics>;
               })}

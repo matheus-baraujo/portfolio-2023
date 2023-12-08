@@ -2,12 +2,58 @@
     width: 45%;
     height: 200px;
     margin: auto;
-    text-align: center;
-    padding: 10%;
-
-    background-color: rgb(49, 185, 185);
+    
+    position: relative;
+    perspective: 150rem;
+    box-shadow: none;
+    background: none;
 }
 
-.skillCard .skillIcon{
+.skillIcon{
     font-size: 4.5rem;
+}
+
+.skillIconDark{
+    font-size: 4.5rem;
+    color: black;
+}
+
+.cardSide{
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+    padding: 25%;
+
+    height: inherit;
+    width: 100%;
+    color: white;
+}
+
+ .front{
+    background-color: #31b9b9;
+}
+
+ .back{
+    transform: rotateY(-180deg);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+}
+
+.skillCard:hover .cardSide.front {
+    transform: rotateY(180deg);
+  }
+  
+.skillCard:hover .cardSide.back {
+    transform: rotateY(0deg);
+}
+
+
+@media screen and (max-width: 600px) {
+    .skillCard{
+        height: 135px;
+    }
 }

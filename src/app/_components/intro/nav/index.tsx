@@ -1,29 +1,33 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 const Nav = () => {
+
   return (
     <nav className={styles.nav}>
       <ul>
         <li>
-          <a className={styles.link} href="">
+          <Link className={styles.link}  href={"#about"} >
             <span></span>About
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.link} href="">
+          <Link className={styles.link} href={"#skills"}>
             <span></span>Skills
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.link} href="">
+          <Link className={styles.link} href={"#"}>
             <span></span>Experiences
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.link} href="">
+          <Link className={styles.link} href={"#projects"}>
             <span></span>Projects
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
@@ -31,3 +35,4 @@ const Nav = () => {
 };
 
 export default Nav;
+
