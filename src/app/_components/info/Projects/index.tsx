@@ -34,7 +34,7 @@ const Projects = () => {
 
   return (
     <div className={styles.projects} id="projects">
-      <h5 className={"mb-3"}>Projects</h5>
+      <h5 className={"mb-3"}></h5>
 
       <ul>
         {teste.map((item) => {

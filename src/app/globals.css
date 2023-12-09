@@ -16,4 +16,20 @@ body {
   scroll-behavior: smooth;
 }
 
+h5{
+  border-bottom: 2px solid rgb(49, 185, 185);
+}
 
+/* :root{
+  --background-dark: #37005c;
+  --primary-dark: ;
+  --secondary-dark: ;
+  --text-dark: white;
+}
+
+[data-theme="dark"] {
+  --background-light: ;
+  --primary-light: ;
+  --secondary-light: ;
+  --text-light: black;
+} */

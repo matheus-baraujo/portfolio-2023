@@ -21,7 +21,7 @@ const Skills = () => {
   return (
     <div className={styles.skills} id='skills'>
 
-        <h5 className={'mb-3'}>Skills</h5>
+        <h5 className={'mb-3'}></h5>
         
 
         <ul>
