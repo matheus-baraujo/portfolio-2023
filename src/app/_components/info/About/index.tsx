@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className={styles.about} id='about'>
         <h5></h5>
-        <p>{Data.random}</p>
+        <p>{Data.about}</p>
     </div>
     )
 }
