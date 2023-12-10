@@ -1,6 +1,28 @@
 .switch{
     position: absolute;
-    right: 4%;
+    right: 5%;
     top: 2%;
     z-index: 55;
+    border-radius: 15px;
+    border: 1px solid var(--secondary);
 }
+
+.icon{
+    color: var(--secondary);
+    display: none;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border-radius: inherit;
+    transition: ease-in-out .3s;
+}
+
+.icon:hover{
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
+.active{
+    display: block;
+}
+
