@@ -15,14 +15,14 @@
 .projects .linkGit{
     font-size: 1.2rem;
     text-decoration: none;
-    color: white;
+    color: var(--text);
     padding: 3px;
     border: 1px solid transparent;
     transition: 0.2s;
 }
 
 .projects .linkGit:hover{
-    color: white;
-    border: 1px solid white;
+    color: var(--text);
+    border: 1px solid var(--text);
     filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.4));
 }
