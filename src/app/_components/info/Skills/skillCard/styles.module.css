@@ -34,7 +34,7 @@
 }
 
  .front{
-    background-color: #31b9b9;
+    background-color: var(--secondary);
 }
 
  .back{

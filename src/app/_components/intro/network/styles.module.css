@@ -11,6 +11,6 @@
 }
 
 .link:hover{
-    color: white;
-    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.4));
+    color: var(--text);
+    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.6));
 }

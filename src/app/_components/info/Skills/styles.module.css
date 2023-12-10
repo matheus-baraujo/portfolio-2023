@@ -15,8 +15,6 @@
     border-radius: 15px;
     padding: 0px 10px;
     background-color: rgba(0, 128, 128, .2);
-    color: rgba(0, 128, 128, 1);
-
     transition: ease-in-out 0.2s;
     opacity: .5;
 }

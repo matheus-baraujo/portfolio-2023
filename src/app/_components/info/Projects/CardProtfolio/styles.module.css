@@ -7,9 +7,9 @@
     display: flex;
     border-radius: 0px !important;
 
-    color: white;
+    color: var(--text);
 
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--primary);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.7px);
@@ -24,10 +24,10 @@
 }
 
 .card .text{
-    font-weight: lighter;
+    font-weight: var(--text-weight);
 }
 
 .card:hover{
     transform: translate(-5px , -5px);;
-    box-shadow: 5px 5px rgb(49, 185, 185);
+    box-shadow: 5px 5px var(--secondary);
 }

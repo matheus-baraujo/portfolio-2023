@@ -23,11 +23,11 @@
 }
 
 .link:hover{
-    color: white;   
+    color: var(--text);   
 }
 
 .link:hover span{
-    background-color: white;
+    background-color: var(--text);
     width: 5rem;
 }
 
