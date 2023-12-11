@@ -5,7 +5,6 @@ import Data from '../../../data.json'
 const About = () => {
   return (
     <div className={styles.about} id='about'>
-        <h5></h5>
 
         {Data.About.split('. ').map((paragraph):any => {
           return <p>{paragraph+'.'}</p>

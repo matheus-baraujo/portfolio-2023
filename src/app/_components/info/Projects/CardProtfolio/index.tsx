@@ -23,11 +23,11 @@ const CardPortfolio = ({
   name = name.charAt(0).toUpperCase() + name.slice(1);
 
   if (language == null) {
-    language = "Mixed coding languages.";
+    language = "coding";
   }
 
   if (description == null) {
-    description = "More details about the project later.";
+    description = "Work in progress.";
   }
 
   if (topics.length == 0) {
