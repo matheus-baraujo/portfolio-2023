@@ -21,7 +21,7 @@ function Intro() {
       <div className={styles.intro}>
 
         <div>
-
+          
           <div className={styles.titles}>
             <Stack direction="vertical" gap={3}>
               <h1 className="mb-0">{data.name}</h1>

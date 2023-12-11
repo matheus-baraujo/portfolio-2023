@@ -30,3 +30,12 @@ h5{
   --text: black;
   --text-weight: 300;
 }
+
+.active-scroll-spy{
+  color: var(--text) !important; 
+}
+
+.active-scroll-spy span{
+  background-color: var(--text) !important;
+  width: 5rem !important; 
+}
