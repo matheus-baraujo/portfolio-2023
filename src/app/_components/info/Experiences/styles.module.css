@@ -1,0 +1,86 @@
+.exp{
+    padding-top: 50px;
+    
+}
+
+.caseList{
+    padding: 0% 15px;
+}
+
+
+.case{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    color: var(--text);
+
+    padding: 8px;
+
+    background: var(--primary);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    transition: ease-in-out .2s;
+}
+
+.case:hover{
+    transform: translate(-5px , -5px);;
+    box-shadow: 5px 5px var(--secondary);
+}
+
+.period{
+    width: 30%;
+    font-weight: var(--text-weight);
+    opacity: .6;
+}
+
+.period p{
+    display: flex;
+    align-items: center;
+    padding: 0% 15px;
+}
+
+.period span{
+    display: inline-flex;
+    height: 1px;
+    width: 3rem;
+    background-color: var(--text);
+    margin: 0% auto;
+    transition: ease-in-out .2s;
+}
+
+.position{
+    width: 70%;
+    padding: 0% 15px;
+}
+
+.position h5{
+    border: none;
+}
+
+.position p{
+    font-weight: var(--text-weight);
+}
+
+@media screen and (max-width: 600px) {
+    .case{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .period{
+        width: 55%;
+    } 
+
+    .period span{
+        width: 1rem;
+    }
+
+    .position{
+        width: 100%;
+    }
+}

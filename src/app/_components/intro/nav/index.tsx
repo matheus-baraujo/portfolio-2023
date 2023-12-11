@@ -13,22 +13,22 @@ const Nav = () => {
       <ul>
         <li>
           <Link className={styles.link}  href={"#about"} data-to-scrollspy-id={'about'}>
-            <span></span>About
+            <span></span>Sobre
           </Link>
         </li>
         <li>
           <Link className={styles.link} href={"#skills"} data-to-scrollspy-id={'skills'}>
-            <span></span>Skills
+            <span></span>Habilidades
           </Link>
         </li>
         <li>
-          <Link className={styles.link} href={"#"} data-to-scrollspy-id={''}>
-            <span></span>Experiences
+          <Link className={styles.link} href={"#experiences"} data-to-scrollspy-id={'experiences'}>
+            <span></span>Experiência
           </Link>
         </li>
         <li>
           <Link className={styles.link} href={"#projects"} data-to-scrollspy-id={'projects'}>
-            <span></span>Projects
+            <span></span>Projetos
           </Link>
         </li>
       </ul>

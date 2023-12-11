@@ -26,7 +26,7 @@ function Intro() {
             <Stack direction="vertical" gap={3}>
               <h1 className="mb-0">{data.name}</h1>
               <h2 className="mb-0">{data.job}</h2>
-              <p className="mb-0">I build exceptional and accessible digital experiences for the web.</p>
+              <p className="mb-0">Eu elaboro experiências digitais excepcionais e acessíveis para a web.</p>
             </Stack>
           </div>
           <Nav/>
