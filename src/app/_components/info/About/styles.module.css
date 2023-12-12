@@ -3,8 +3,13 @@
 }
 
 .about p{
-    color: gray;
+    color: var(--about);
     padding: 0px 15px;
+    font-weight: 200;
+}
+
+.about span{
+    font-weight: bold;
 }
 
 .about h5{

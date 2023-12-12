@@ -8,8 +8,8 @@ const About = () => {
 
         <h5 className='mb-3'></h5>
 
-        {Data.About.split('. ').map((paragraph):any => {
-          return <p>{paragraph+'.'}</p>
+        {Data.About.split('\n').map((paragraph):any => {
+          return <p>{paragraph}</p>
         })}
     </div>
     )

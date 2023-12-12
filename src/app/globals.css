@@ -21,6 +21,7 @@ h5{
   --secondary: #31b9b9;
   --text: white;
   --text-weight: lighter;
+  --about: rgba(255, 255, 255, .8);
 }
 
 :root[data-theme='light']{
@@ -29,6 +30,7 @@ h5{
   --secondary: #37005c;
   --text: black;
   --text-weight: 300;
+  --about: black;
 }
 
 .active-scroll-spy{
