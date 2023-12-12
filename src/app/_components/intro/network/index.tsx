@@ -12,10 +12,10 @@ const Network = () => {
   return (
     <div className={styles.network}>
         
-        <Stack direction={'horizontal'} gap={3}>
-          <a className={'me-0 ' + styles.link} href=""><FontAwesomeIcon  icon={faGithub}/></a>
-          <a className={'mx-auto ' + styles.link} href=""><FontAwesomeIcon  icon={faLinkedin}/></a>
-          <a className={'ms-0 me-auto ' + styles.link} href=""><FontAwesomeIcon  icon={faInstagram}/></a>
+        <Stack className={styles.wrapper} direction={'horizontal'} gap={3}>
+          <a className={'me-0 ' + styles.link} href="https://github.com/matheus-baraujo"><FontAwesomeIcon  icon={faGithub}/></a>
+          <a className={'mx-auto ' + styles.link} href="https://linkedin.com/in/matheus-batista-de-araújo-0402621b3"><FontAwesomeIcon  icon={faLinkedin}/></a>
+          <a className={'ms-0 ' + styles.link} href="#"><FontAwesomeIcon  icon={faInstagram}/></a>
         </Stack>
         
     </div>

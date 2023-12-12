@@ -26,3 +26,9 @@
     border: 1px solid var(--text);
     filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.4));
 }
+
+@media screen and (max-width: 600px) {
+    .projects{
+        padding-bottom: 70px;
+    }
+}

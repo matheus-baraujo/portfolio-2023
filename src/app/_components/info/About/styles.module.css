@@ -7,9 +7,16 @@
     padding: 0px 15px;
 }
 
+.about h5{
+    display: none;
+}
 
 @media screen and (max-width: 600px) {
     .about{
         padding-top: 50px;
+    }
+
+    .about h5{
+        display: block;
     }
 }
