@@ -22,6 +22,8 @@ Este site serve como um showcase para meus trabalhos e projetos. Contém seçõe
 - JavaScript
 - Frameworks (se aplicável, por exemplo: React, NextJs, etc.)
 - Hospedagem na Vercel
+- Vitest
+- Cypress
 
 ## Uso
 
