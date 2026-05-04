@@ -16,6 +16,21 @@
     display: none;
 }
 
+.about a{
+    color: var(--secondary);
+    background-color: var(--primary);
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.about a:hover{
+    background-color: var(--text);
+    color: var(--background);
+}
+
 @media screen and (max-width: 600px) {
     .about{
         padding-top: 50px;

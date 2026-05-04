@@ -27,8 +27,8 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link className={styles.link} href={"#projects"} data-to-scrollspy-id={'projects'}>
-            <span></span>Projetos
+          <Link className={styles.link} href={"#repositories"} data-to-scrollspy-id={'repositories'}>
+            <span></span>Repositórios
           </Link>
         </li>
       </ul>

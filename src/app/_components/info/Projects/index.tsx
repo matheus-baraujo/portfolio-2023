@@ -33,7 +33,7 @@ const Projects = () => {
   const teste = data.slice(0, 4);
 
   return (
-    <div className={styles.projects} id="projects">
+    <div className={styles.projects} id="repositories">
       <h5 className={"mb-3"}></h5>
 
       <ul>
