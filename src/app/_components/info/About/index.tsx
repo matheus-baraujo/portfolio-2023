@@ -14,9 +14,9 @@ const About = () => {
       <p>Atualmente, foco minha evolução no ecossistema JavaScript/TypeScript, utilizando React e Next.js para criar interfaces modernas e escaláveis. Além disso, estou cursando uma Especialização em Análise de Dados, o que me permite olhar para o desenvolvimento não apenas como escrita de código, mas como uma forma de estruturar informações e gerar insights valiosos para os usuários.</p>
       <p>No início deste ano (2026) comecei minha especialização em <b>Análise de Dados</b> pelo <a href="https://cesar.school/" target="_blank">Cesar School</a>, o que me permite olhar para o desenvolvimento não apenas como escrita de código, mas como uma forma de estruturar informações e gerar insights valiosos para os usuários.</p>
       <p><b>O que trago para o seu projeto:</b></p>
-      <p><b>Experiência Full-stack:</b> Domínio de bancos de dados relacionais e lógica de backend.</p>
-      <p><b>Foco em Front-end Moderno:</b> Criação de interfaces performáticas com as melhores práticas de mercado.</p>
-      <p><b>Mentalidade Analítica:</b> Capacidade de interpretar dados para melhorar a experiência do usuário e a eficiência do software.</p>
+      <p><span><b>Experiência Full-stack:</b></span> Experiência com bancos de dados relacionais e lógica de backend.</p>
+      <p><span><b>Foco em Front-end Moderno:</b></span> Criação de interfaces performáticas com as melhores práticas de mercado.</p>
+      <p><span><b>Mentalidade Analítica:</b></span> Capacidade de interpretar dados para melhorar a experiência do usuário e a eficiência do software.</p>
     </div>
     )
 }

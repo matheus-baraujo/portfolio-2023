@@ -16,7 +16,7 @@
     display: none;
 }
 
-.about a{
+.about a, .about span{
     color: var(--secondary);
     background-color: var(--primary);
     padding: 2px 5px;

@@ -4,5 +4,62 @@
     "github": "matheus-baraujo",
     "About": "Minha jornada na tecnologia começou com uma transição decisiva para Desenvolvimento de Sistemas. O que começou como uma curiosidade pela programação durante a primeira graduação, transformou-se em uma carreira sólida focada em construir soluções que unem performance e impacto real.\nHoje, sou Analista de Sistemas formado e atuo como Desenvolvedor Web Freelancer. Meu histórico inclui o desenvolvimento de diversas aplicações utilizando Javascript, MySQL e PostgreSQL, entregando projetos funcionais e robustos para clientes reais.\nAtualmente, foco minha evolução no ecossistema JavaScript/TypeScript, utilizando React e Next.js para criar interfaces modernas e escaláveis. Além disso, estou cursando uma Especialização em Análise de Dados, o que me permite olhar para o desenvolvimento não apenas como escrita de código, mas como uma forma de estruturar informações e gerar insights valiosos para os usuários.\nO que trago para o seu projeto:\nExperiência Full-stack: Domínio de bancos de dados relacionais e lógica de backend.\nFoco em Front-end Moderno: Criação de interfaces performáticas com as melhores práticas de mercado.\nMentalidade Analítica: Capacidade de interpretar dados para melhorar a experiência do usuário e a eficiência do software.",
     "Skills": "HTML, Javascript, React, NextJs",
-    "Experiences": [["2020", "Hoje","Freelance", "Tive a oportunidade de trabralhar em projetos como freelance atuando como fullstack, colaborando para o desenvolvimento do laytout e design do projeto e realizando a manutenção do banco de dados e deploy da aplicação."]]
+    "Experiences": [["2020", "Hoje","Freelance", "Tive a oportunidade de trabralhar em projetos como freelance atuando como fullstack, colaborando para o desenvolvimento do layout e design do projeto, execução do projeto integrando API's, realizando a manutenção do banco de dados e deploy da aplicação."]],
+    "projects": [
+        {
+            "slug": "cafe-com-comprador",
+            "name": "Café com Comprador",
+            "description": "Atualização de portal de notícias e informações do Café com Comprador (mais influente comunidade/plataforma de mídia de Procurement no Brasil).\nIntegrações com multiplas API e desenvolvimento de CMS personalizado.\nO projeto foi desenvolvido em parceria com a empresa Findout.",
+            "stack": "HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
+            "date": "2026-05-01",
+            "gallery": [
+                "projects/cafe-com-comprador/cover.png",
+                "projects/cafe-com-comprador/demo.mp4"
+            ]
+        },
+        {
+            "slug": "soul-juliana",
+            "name": "Soul Juliana",
+            "description": "Site de Portfolio para filmmaker mobile.\nDesenvolvimento de CMS personalizado.\nO projeto foi desenvolvido em parceria com a empresa Findout.",
+            "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
+            "date": "2025-05-01",
+            "gallery": [
+                "projects/soul-juliana/cover.png",
+                "projects/soul-juliana/demo.mp4"
+            ]
+        },
+        {
+            "slug": "findout",
+            "name": "Findout",
+            "description": "Projeto de estudo para a empresa Findout, criação de site de portfolio.",
+            "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
+            "date": "2025-04-01",
+            "gallery": [
+                "projects/findout/cover.png",
+                "projects/findout/demo.mp4"
+            ]
+        },
+        {
+            "slug": "amare",
+            "name": "Amaré ",
+            "description": "Site para a empresa de marketing digital Amaré com CMS personalizado, feito em parceria com a própria empresa.",
+            "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
+            "date": "2022-06-01",
+            "gallery": [
+                "projects/amare/cover.png",
+                "projects/amare/demo.mp4"
+            ]
+        },
+        {
+            "slug": "fm-veiculos",
+            "name": "FM - Veiculos",
+            "description": "Site com sistema de gerenciamento de veículos e contato para vendas e negociações.\nCriação de CMS personalizado.\nO projeto foi desenvolvido em parceria com uma empresa de marketing digital.",
+            "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
+            "date": "2022-05-01",
+            "gallery": [
+                "projects/fm-veiculos/cover.png",
+                "projects/fm-veiculos/demo.mp4"
+            ]
+        }
+    ]
 }

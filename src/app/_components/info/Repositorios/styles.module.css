@@ -1,0 +1,34 @@
+.projects{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.projects ul{
+    padding: 0%;
+}
+
+.projects ul li{
+    padding: 0px 15px;
+    list-style: none;
+}
+
+.projects .linkGit{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text);
+    padding: 3px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.projects .linkGit:hover{
+    color: var(--text);
+    border: 1px solid var(--text);
+    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.4));
+}
+
+@media screen and (max-width: 600px) {
+    .projects{
+        padding-bottom: 70px;
+    }
+}

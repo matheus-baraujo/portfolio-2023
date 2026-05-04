@@ -7,6 +7,7 @@ import styles from "./styles.module.css";
 import About from './About';
 import Skills from './Skills';
 import Experiences from './Experiences';
+import Repositorios from './Repositorios';
 import Projects from './Projects';
 
 import ScrollSpy from "react-ui-scrollspy";
@@ -21,6 +22,7 @@ const Info = () => {
           <Skills></Skills>
           <Experiences></Experiences>
           <Projects></Projects>
+          <Repositorios></Repositorios>
         </ScrollSpy>
       </div>
     </Col>
