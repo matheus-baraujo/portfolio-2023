@@ -16,6 +16,12 @@
 }
 
 
+.disabled{
+    color: gray !important;
+    cursor: not-allowed;
+    pointer-events: none; 
+}
+
 @media screen and (max-width: 600px) {
     .network{
         position: fixed;

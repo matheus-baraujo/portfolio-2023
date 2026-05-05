@@ -192,12 +192,38 @@
     color: var(--text);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 10px 12px;
+    appearance: base-select;
+    transition: 0.4s;
 }
+
+.mobileSelectorSelect::picker-icon {
+    transition: 0.4s rotate;
+}
+.mobileSelectorSelect:open::picker-icon {
+    rotate: 180deg;
+}
+
+.mobileSelectorSelect::picker(select) {
+    background-color: var(--primary); /* Ou a cor que preferir */
+    border: 1px solid #ffffff33;
+    border-radius: 8px; /* Aqui você define o arredondamento */
+    padding: 4px; 
+    box-shadow: 0 4px 12px #00000080;
+  }
 
 .mobileSelectorSelect option {
     background-color: #37005c; /* Use uma cor sólida em vez de var para garantir */
     color: white;
     padding: 2px 0px;
+    transition: 0.4s;
+}
+
+.mobileSelectorSelect option:first-of-type {
+    border-radius: 8px 8px 0 0 !important;
+}
+
+.mobileSelectorSelect option:last-of-type {
+    border-radius: 0 0 8px 8px !important;
 }
 
 .contentTitle{

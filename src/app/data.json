@@ -24,8 +24,8 @@
             "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
             "date": "2025-05-01",
             "gallery": [
-                "projects/soul-juliana/cover.png",
-                "projects/soul-juliana/demo.mp4"
+                "projects/soul-juliana/demo.mp4",
+                "projects/soul-juliana/demo (mobile).mp4"
             ]
         },
         {
@@ -49,7 +49,7 @@
             "slug": "amare",
             "name": "Amaré ",
             "description": "Site para a empresa de marketing digital Amaré com CMS personalizado, feito em parceria com a própria empresa.",
-            "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
+            "stack":"HTML, CSS, JavaScript, PHP, MySQL, Figma",
             "date": "2022-06-01",
             "gallery": [
                 "projects/amare/Home.png",
@@ -64,7 +64,7 @@
             "slug": "fm-veiculos",
             "name": "FM - Veiculos",
             "description": "Site com sistema de gerenciamento de veículos e contato para vendas e negociações.\nCriação de CMS personalizado.\nO projeto foi desenvolvido em parceria com uma empresa de marketing digital.",
-            "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
+            "stack":"HTML, CSS, JavaScript, PHP, MySQL, Figma",
             "date": "2022-05-01",
             "gallery": [
                 "projects/fm-veiculos/0 - HOME.png",
