@@ -101,6 +101,8 @@
     color: var(--text);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 40px rgba(0,0,0,.45);
+    display: flex;
+    flex-direction: column;
 }
 
 .modalHeader{
@@ -127,14 +129,15 @@
 .modalBody{
     display: grid;
     grid-template-columns: 260px 1fr;
-    min-height: 520px;
-    max-height: calc(min(720px, 100vh) - 56px);
+    flex: 1;
+    min-height: 0;
 }
 
 .sidebar{
     border-right: 1px solid rgba(255, 255, 255, 0.2);
-    overflow: auto;
+    overflow-y: auto;
     background: rgba(255, 255, 255, 0.02);
+    min-height: 0;
 }
 
 .sidebarTitle{
@@ -164,14 +167,55 @@
 }
 
 .content{
-    overflow: auto;
+    overflow-y: auto;
+    scrollbar-color: var(--text) transparent;
     padding: 16px;
+    min-height: 0;
+}
+
+.mobileSelector{
+    display: none;
+    margin-bottom: 12px;
+}
+
+.mobileSelectorLabel{
+    display: block;
+    font-weight: bold;
+    opacity: .9;
+    margin-bottom: 6px;
+}
+
+
+.mobileSelectorSelect{
+    width: 100%;
+    background: var(--primary);
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 12px;
+}
+
+.mobileSelectorSelect option {
+    background-color: #37005c; /* Use uma cor sólida em vez de var para garantir */
+    color: white;
+    padding: 2px 0px;
 }
 
 .contentTitle{
     font-weight: bold;
     font-size: 1.25rem;
     margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.contentDate{
+    font-size: 0.95rem;
+    font-weight: var(--text-weight);
+    opacity: .85;
+    text-transform: capitalize;
+    white-space: nowrap;
 }
 
 .contentDesc{
@@ -214,214 +258,11 @@
     }
 
     .sidebar{
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        max-height: 160px;
+        display: none;
     }
 
-    .gallery{
-        grid-template-columns: 1fr;
-    }
-}
-.projects{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.list{
-    padding: 0%;
-}
-
-.item{
-    padding: 0px 15px;
-    list-style: none;
-}
-
-.projectCard{
-    width: 100%;
-    text-align: left;
-    border-radius: 0px;
-    color: var(--text);
-    background: var(--primary);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(5.7px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 14px 16px;
-    transition: ease-in-out 0.3s;
-}
-
-.projectCard:hover{
-    transform: translate(-5px , -5px);
-    box-shadow: 5px 5px var(--secondary);
-}
-
-.cardTitle{
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-
-.cardDesc{
-    font-weight: var(--text-weight);
-    opacity: .9;
-}
-
-.viewAllRow{
-    padding: 0px 15px;
-    list-style: none;
-    text-align: end;
-}
-
-.viewAllBtn{
-    font-size: 1.2rem;
-    color: var(--text);
-    padding: 3px;
-    border: 1px solid transparent;
-    transition: 0.2s;
-    background: transparent;
-}
-
-.viewAllBtn:hover{
-    color: var(--text);
-    border: 1px solid var(--text);
-    filter: drop-shadow(3px 3px 3px rgba(128, 128, 128, 0.4));
-}
-
-/* Modal */
-.modalOverlay{
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 18px;
-    z-index: 9999;
-}
-
-.modal{
-    width: min(1050px, 100%);
-    max-height: min(720px, 100%);
-    overflow: hidden;
-    background: var(--background);
-    color: var(--text);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 40px rgba(0,0,0,.45);
-}
-
-.modalHeader{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background: var(--primary);
-}
-
-.modalTitle{
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.closeBtn{
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--text);
-    padding: 6px 10px;
-}
-
-.modalBody{
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    min-height: 520px;
-    max-height: calc(min(720px, 100vh) - 56px);
-}
-
-.sidebar{
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    overflow: auto;
-    background: rgba(255, 255, 255, 0.02);
-}
-
-.sidebarTitle{
-    padding: 12px 12px 6px 12px;
-    font-weight: bold;
-    opacity: .9;
-}
-
-.sidebarList{
-    list-style: none;
-    padding: 0 8px 12px 8px;
-    margin: 0;
-}
-
-.sidebarItem{
-    width: 100%;
-    text-align: left;
-    background: transparent;
-    border: 1px solid transparent;
-    color: var(--text);
-    padding: 10px 10px;
-}
-
-.sidebarItemActive{
-    border-color: var(--secondary);
-    background: rgba(49, 185, 185, .12);
-}
-
-.content{
-    overflow: auto;
-    padding: 16px;
-}
-
-.contentTitle{
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: 8px;
-}
-
-.contentDesc{
-    font-weight: var(--text-weight);
-    opacity: .95;
-    margin-bottom: 14px;
-}
-
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-}
-
-.media{
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.04);
-    padding: 10px;
-}
-
-.image, .video{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.emptyState{
-    opacity: .85;
-    font-weight: var(--text-weight);
-}
-
-@media screen and (max-width: 600px) {
-    .projects{
-        padding-bottom: 70px;
-    }
-
-    .modalBody{
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar{
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        max-height: 160px;
+    .mobileSelector{
+        display: block;
     }
 
     .gallery{

@@ -30,6 +30,19 @@ function sortByMostRecent(a: Project, b: Project) {
   return 0;
 }
 
+function formatMonthYear(dateIso: string) {
+  const t = Date.parse(dateIso);
+  if (Number.isNaN(t)) return "";
+
+  const formatted = new Intl.DateTimeFormat("pt-BR", { 
+    month: "long", 
+    year: "numeric" 
+  }).format(new Date(t));
+
+  const result = formatted.replace(/ de /g, " ");
+  return result.charAt(0).toUpperCase() + result.slice(1);
+}
+
 const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
@@ -140,8 +153,46 @@ const Projects = () => {
               <section className={styles.content}>
                 {selectedProject ? (
                   <>
-                    <div className={styles.contentTitle}>{selectedProject.name}</div>
-                    <div className={styles.contentDesc}>{selectedProject.description}</div>
+                    <div className={styles.mobileSelector}>
+                      <label className={styles.mobileSelectorLabel} htmlFor="projectSelector">
+                        Projeto
+                      </label>
+                      
+                      <select
+                        id="projectSelector"
+                        className={styles.mobileSelectorSelect}
+                        value={selectedProject.slug}
+                        onChange={(e) => setSelectedSlug(e.target.value)}
+                      >
+                        {projects.map((p) => {
+                          return (
+                            <option key={p.slug} value={p.slug}>
+                              {p.name}
+                            </option>
+                          );
+                        })}
+                      </select>
+
+                    </div>
+
+                    <div className={styles.contentTitle}>
+                      {selectedProject.name}
+                      <span className={styles.contentDate}>
+                        {formatMonthYear(selectedProject.date)}
+                      </span>
+                    </div>
+                    <div className={styles.contentDesc}>
+                      {selectedProject.description}
+                      <br/>
+
+                      <div className={styles.cardTags}>
+                        {
+                          selectedProject.stack.split(", ").map((item, index) => {
+                            return <div className={styles.cardTag}><FontAwesomeIcon icon={faHashtag} /> {item}</div>
+                          })
+                        }
+                      </div>
+                    </div>
 
                     {selectedProject.gallery?.length ? (
                       <div className={styles.gallery}>

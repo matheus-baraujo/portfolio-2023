@@ -13,14 +13,14 @@
             "stack": "HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
             "date": "2026-05-01",
             "gallery": [
-                "projects/cafe-com-comprador/cover.png",
-                "projects/cafe-com-comprador/demo.mp4"
+                "projects/cafe-com-comprador/demo.mp4",
+                "projects/cafe-com-comprador/demo (mobile).mp4"
             ]
         },
         {
             "slug": "soul-juliana",
             "name": "Soul Juliana",
-            "description": "Site de Portfolio para filmmaker mobile.\nDesenvolvimento de CMS personalizado.\nO projeto foi desenvolvido em parceria com a empresa Findout.",
+            "description": "Site de Portfolio para filmmaker mobile.\nDesenvolvimento do site envolveu criação de CMS personalizado.\nO projeto foi desenvolvido em parceria com a empresa Findout.",
             "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
             "date": "2025-05-01",
             "gallery": [
@@ -31,12 +31,18 @@
         {
             "slug": "findout",
             "name": "Findout",
-            "description": "Projeto de estudo para a empresa Findout, criação de site de portfolio.",
-            "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
+            "description": "Projeto de estudo para a empresa Findout, empresa de marketing e filmmaking, o caso foi a criação de site de portfolio.",
+            "stack":"Figma",
             "date": "2025-04-01",
             "gallery": [
-                "projects/findout/cover.png",
-                "projects/findout/demo.mp4"
+                "projects/findout/1 - home.png",
+                "projects/findout/2 - Projetos.png",
+                "projects/findout/3 - Contato.png",
+                "projects/findout/0 - Menu Open.png",
+                "projects/findout/1 - Home (mobile).png",
+                "projects/findout/2 - Projetos (mobile).png",
+                "projects/findout/2.5 - Projeto (mobile).png",
+                "projects/findout/3 - Contato (mobile).png"
             ]
         },
         {
@@ -46,7 +52,11 @@
             "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
             "date": "2022-06-01",
             "gallery": [
-                "projects/amare/cover.png",
+                "projects/amare/Home.png",
+                "projects/amare/Blog.jpg",
+                "projects/amare/Sobre Nós.png",
+                "projects/amare/Soluçõespt2.png",
+                "projects/amare/Contato.png",
                 "projects/amare/demo.mp4"
             ]
         },
@@ -57,7 +67,11 @@
             "stack":"HTML, CSS, JavaScript, Nextjs, PHP, MySQL, Figma",
             "date": "2022-05-01",
             "gallery": [
-                "projects/fm-veiculos/cover.png",
+                "projects/fm-veiculos/0 - HOME.png",
+                "projects/fm-veiculos/1 - VEICULOS.png",
+                "projects/fm-veiculos/2 - VENDA SEU CARRO.png",
+                "projects/fm-veiculos/3 - FM VEÍCULOS.png",
+                "projects/fm-veiculos/4 - CONTATO.png",
                 "projects/fm-veiculos/demo.mp4"
             ]
         }
