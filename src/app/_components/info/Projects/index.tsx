@@ -199,6 +199,11 @@ const Projects = () => {
                         {selectedProject.gallery.map((src) => {
                           const key = `${selectedProject.slug}:${src}`;
                           const safeSrc = src.startsWith("/") ? src : `/${src}`;
+
+                          const repoPrefix = "/portfolio-2023";
+                          
+                          const finalSrc = `${repoPrefix}${safeSrc}`;
+
                           return (
                             <div key={key} className={styles.media}>
                               {isVideo(safeSrc) ? (
@@ -207,12 +212,12 @@ const Projects = () => {
                                   controls
                                   preload="metadata"
                                 >
-                                  <source src={safeSrc} />
+                                  <source src={finalSrc} />
                                 </video>
                               ) : (
                                 <img
                                   className={styles.image}
-                                  src={safeSrc}
+                                  src={finalSrc}
                                   alt={`${selectedProject.name} - mídia`}
                                   loading="lazy"
                                 />
